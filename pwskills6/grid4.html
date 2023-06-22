@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex4</title>
+    <style>
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 400px;
+            background-color: #2b1e16;
+            /* position: relative;
+            bottom: 0px;
+            top: 3vh; */
+        }
+
+        .footer-item {
+            text-align: center;
+
+        }
+
+        .item-1 img {
+            width: 100px;
+            height: 220px;
+        }
+
+        .item-1 p {
+            margin: 0 100px;
+            color: #8c6e54;
+
+        }
+
+        .item-2 img {
+            width: 100px;
+            height: 220px;
+        }
+
+        .item-2 p {
+            margin: 0 100px;
+            color: #8c6e54;
+        }
+
+        .item-3 img {
+            width: 100px;
+            height: 220px;
+        }
+
+        .item-3 p {
+            margin: 0 100px;
+            color: #8c6e54;
+        }
+
+        footer h1 {
+            color: aliceblue;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* border: 2px solid red; */
+            height: 300px;
+        }
+
+        .sub-box-1 {
+            /* border: 2px solid black; */
+            /* text-align: center; */
+            display: grid;
+            align-items: center;
+            justify-content: start;
+        
+        }
+
+        .sub-box-2 {
+            /* border: 2px solid black; */
+            /* text-align: center; */
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sub-box-3 {
+            /* border: 2px solid black; */
+            /* text-align: center; */
+            display: grid;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .box-1 {
+            width: 350px;
+            border: 1px solid #000000;
+            height: 280px;
+            border-radius: 20px;
+            /* text-align: center; */
+        }
+
+        .box-1 img {
+            width: 100%;
+            height: 180px;
+            border-radius: 20px;
+
+        }
+
+        .box-2 {
+            width: 350px;
+            border: 1px solid #000000;
+            height: 280px;
+            border-radius: 20px;
+            /* display:grid;
+            justify-content: center; */
+            /* text-align: center; */
+        }
+
+        .box-2 img {
+            width: 100%;
+            height: 180px;
+            border-radius: 20px;
+
+        }
+
+        .box-3 {
+            width: 350px;
+            border: 1px solid #000000;
+            height: 280px;
+            border-radius: 20px;
+            display: grid;
+            justify-content: end;
+            /* text-align: center; */
+        }
+
+        .box-3 img {
+            width: 100%;
+            height: 180px;
+            border-radius: 20px;
+
+        }
+
+        .sub-box-1 h1 {
+            padding: 0 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 32px;
+        }
+
+        .sub-box-1 p {
+            padding: 0 30px;
+            margin-top: 0px;
+            font-size: 18px;
+            color: grey;
+        }
+
+        .sub-box-2 h1 {
+            padding: 0 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 32px;
+        }
+
+        .sub-box-2 p {
+            padding: 0 30px;
+            margin-top: 0px;
+            font-size: 18px;
+            color: grey;
+        }
+
+        .sub-box-3 h1 {
+            padding: 0 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 32px;
+          
+        }
+
+        .sub-box-3 p {
+            padding: 0 30px;
+            margin-top: 0px;
+            font-size: 18px;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer">
+            <div class="footer-item item-1">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+                    alt="">
+                <h1>No Minimum Order</h1>
+                <p>Order in yourself or or the group,with no ristriction on order value</p>
+            </div>
+            <div class="footer-item item-2">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+                    alt="">
+                <h1>Live Order Tracking</h1>
+                <p>Know where your order is at all times,from the retaurant to your doorstep</p>
+            </div>
+            <div class="footer-item item-3">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+                    alt="">
+                <h1>Lightning-Fast Delivery</h1>
+                <p>Experience superfast Swiggy's Delivery for food delivered fresh & on time.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="container">
+        <div class="sub-box-1">
+            <div class="box-1">
+                <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,* "
+                    alt="">
+                <h1>Order Online</h1>
+                <p>Stay home and order to your doorstep</p>
+            </div>
+        </div>
+        <div class="sub-box-2">
+            <div class="box-2">
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="SubImage 01" />
+                <h1>On-site Dining</h1>
+                <p>View the city's favourite dining venues.</p>
+            </div>
+        </div>
+        <div class="sub-box-3">
+            <div class="box-3">
+                <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="SubImage 01" />
+                <h1>Nightlife & Clubs</h1>
+                <p>Explore the city's top nightlife outlets & Book tables.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid6</title>
+    <style>
+        body{
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .timetable div{
+            padding:15px 5px;
+        }
+        .timetable{
+            display:grid;
+            grid-template-columns: repeat(8,1fr);
+            border:2px solid red;
+            height:400px;
+            text-align: center;
+            padding:10px;
+            background-color: #5da3fa;
+        }
+        .row-1{
+            border:2px dotted black;
+            background-color: #ff6666;
+            font-weight: bold;
+        }
+
+        .row-2{
+            border:2px dotted black;
+            background-color: #03c6c7;
+        }
+        .row-3{
+            border:2px dotted black;
+            background-color: #03c6c7;
+        }
+        .row-4{
+            border:2px dotted black;
+            background-color: #03c6c7;
+        }
+        .row-5{
+            border:2px dotted black;
+            background-color: #03c6c7;
+        }
+        .row-6{
+            border:2px dotted black;
+            background-color: #03c6c7;
+        }
+        .row-7{
+            border:2px dotted black;
+            background-color: #03c6c7;
+        }
+        .bold{
+            background-color: #8d3daf;
+            font-weight: bold;
+        }
+        .r2-7{
+            grid-column: 7/9;
+            /* display:grid;
+            justify-self: center;
+            align-self: center; */
+        }
+        .r3-2{
+            grid-column: 2/4;
+        }
+        .r4-7{
+            grid-column: 7/9;
+        }
+        .r5-2{
+            grid-column: 2/4;
+        }
+        .r6-7{
+            grid-column: 7/9;
+        }
+        .r7-7{
+            grid-column: 7/9;
+        }
+        .r7-2{
+            grid-column: 2/4;
+        }
+        .start{
+            background-color: #cad5e2;
+
+        }
+        .end-1{
+            background-color: #1faa59;
+        }
+        .lunch{
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <h1> School Timetable</h1>
+    <div class="container">
+        <div class="timetable">
+            <div class="row-1 r1-1">Time</div>
+            <div class="row-1 r1-2">08:00 am - 09:00 am</div>
+            <div class="row-1 r1-3">09:00 AM - 10:00 AM</div>
+            <div class="row-1 r1-4">10:00 AM - 11:00 AM</div>
+            <div class="row-1 r1-5">11:00 AM - 12:00 PM</div>
+            <div class="row-1 r1-6">12:00 PM - 2:00 PM</div>
+            <div class="row-1 r1-7">2:00 PM - 3:00 PM</div>
+            <div class="row-1 r1-8">3:00 PM - 4:00 PM</div>
+
+            <div class="row-2 r2-1 bold">Monday</div>
+            <div class="row-2 r2-2">English</div>
+            <div class="row-2 r2-3">Biology</div>
+            <div class="row-2 r2-4">Physics</div>
+            <div class="row-2 r2-5">Chemistry</div>
+            <div class="row-2 r2-6 lunch">L</div>
+            <div class="row-2 r2-7 start"> Chemistry Lab</div>
+            <!-- <div class="row-2 r2-8">8</div> -->
+
+            <div class="row-3 r3-1 bold">Tuesday</div>
+            <div class="row-3 r3-2 start">Biology Lab</div>
+            <!-- <div class="row-3 r3-3">3</div> -->
+            <div class="row-3 r3-4">Physics</div>
+            <div class="row-3 r3-5">Chemistry</div>
+            <div class="row-3 r3-6 lunch">U</div>
+            <div class="row-3 r3-7">English</div>
+            <div class="row-3 r3-8">Biology</div>
+
+            <div class="row-4 r4-1 bold">Wednesday</div>
+            <div class="row-4 r4-2">English</div>
+            <div class="row-4 r4-3">Biology</div>
+            <div class="row-4 r4-4">Physics</div>
+            <div class="row-4 r4-5">Chemistry</div>
+            <div class="row-4 r4-6 lunch">N</div>
+            <div class="row-4 r4-7 end-1">Games</div>
+            <!-- <div class="row-4 r4-8">8</div> -->
+
+            <div class="row-5 r5-1 bold">Thursday</div>
+            <div class="row-5 r5-2 start">Biology Lab</div>
+            <!-- <div class="row-5 r5-3">3</div> -->
+            <div class="row-5 r5-4">Physics</div>
+            <div class="row-5 r5-5">Chemistry</div>
+            <div class="row-5 r5-6 lunch">C</div>
+            <div class="row-5 r5-7">English</div>
+            <div class="row-5 r5-8">Biology</div>
+
+            <div class="row-6 r6-1 bold">Friday</div>
+            <div class="row-6 r6-2">English</div>
+            <div class="row-6 r6-3">Biology</div>
+            <div class="row-6 r6-4">Physics</div>
+            <div class="row-6 r6-5">Chemistry</div>
+            <div class="row-6 r6-6 lunch">H</div>
+            <div class="row-6 r6-7 start"> Physics Lab</div>
+            <!-- <div class="row-6 r6-8">8</div> -->
+
+            <div class="row-7 r7- bold">Saturday</div>
+            <div class="row-7 r7-2 start">BIology Lab</div>
+            <!-- <div class="row-7 r7-3">3</div> -->
+            <div class="row-7 r7-4">Physics</div>
+            <div class="row-7 r7-5">CHemistry</div>
+            <div class="row-7 r7-6 lunch">Break</div>
+            <div class="row-7 r7-7 end-1">LET OFF</div>
+            <!-- <div class="row-7 r7-8">8</div> -->
+
+        </div>
+    </div>
+</body>
+</html>

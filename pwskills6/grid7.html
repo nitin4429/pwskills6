@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid7</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            height:90vh;
+            grid-gap: 20px;
+        }
+        .sub-con-1{
+            /* border:1px solid black; */
+            grid-row: 1/2;  
+        }
+        .sub-con-2{
+            /* border:1px solid black; */
+            grid-row: 2/4;  
+        }
+        .sub-con-3{
+            /* border:1px solid black; */
+            grid-row: 1/3;  
+        }
+        .sub-con-4{
+            /* border:1px solid black; */
+            grid-row: 3/4;  
+        }
+        .sub-con-5{
+            /* border:1px solid black; */
+            grid-row: 1/2;  
+        }
+        .sub-con-6{
+            /* border:1px solid black; */
+            grid-row: 2/4;  
+        }
+        .sub-con-1 img{
+        width:100%;
+        height:203px;
+
+        }
+        .sub-con-2 img{
+            width: 100%;
+            height:439px;
+
+        }
+        .sub-con-3 img{
+            width:100%;
+            height:439px;
+
+        }
+        .sub-con-4 img{
+            width:100%;
+            height:203px;
+
+        }
+        .sub-con-5 img{
+            width:100%;
+            height:203px;
+
+        }
+        .sub-con-6 img{
+            width:100%;
+            height:439px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-con-1">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="img">
+        </div>
+        <div class="sub-con-2">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" alt="">
+        </div>
+        <div class="sub-con-3">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" alt="">
+        </div>
+        <div class="sub-con-4">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="">
+        </div>
+        <div class="sub-con-5">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" alt="">
+        </div>
+        <div class="sub-con-6">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>

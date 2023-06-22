@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid5</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,1fr);
+            /* border:2px solid red; */
+            height:350px;
+            background-color:#2e2828;
+            position:relative;
+            top:10vh;
+        }
+        .sub-class-2{
+            /* border:2px solid black; */
+            padding:10px 20px;
+
+        }
+        .sub-class-2 h1{
+            color:white;
+            font-size: 35px;
+        }
+        .sub-class-2 p{
+           color:#7a5454;
+           font-size:20px ;
+        }
+        .sub-class-3 h1{
+            color:white;
+            font-size: 35px;
+        }
+        .sub-class-3 p{
+           color:#7a5454;
+           font-size:20px ;
+        }
+
+        .sub-class-3{
+            /* border:2px solid black; */
+            padding:10px 20px;
+
+        }
+        .sub-class-4{
+            /* border:2px solid black; */
+            grid-column-start:1 ;
+            grid-column-end:4;
+            height:60px;
+            text-align: center;
+        }
+        .copy{
+            color:aliceblue;
+            font-size: 20px;
+        }
+        .sub-class-1{
+            margin:13vh 0px;
+            text-align: center;
+
+        }
+        .sub-class-1 img{
+            width:100px;
+            height:100px;
+
+        }
+        .container-1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* border: 2px solid red; */
+            height: 300px;
+        }
+
+        .sub-box-1 {
+            /* border: 2px solid black; */
+            /* text-align: center; */
+            display: grid;
+            align-items: center;
+            justify-content:center;
+        
+        }
+
+        .sub-box-2 {
+            /* border: 2px solid black; */
+            /* text-align: center; */
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sub-box-3 {
+            /* border: 2px solid black; */
+            /* text-align: center; */
+            display: grid;
+            align-items: center;
+            justify-content:center;
+        }
+
+        .box-1 {
+            width: 350px;
+            border: 1px solid #000000;
+            height: 280px;
+            border-radius: 20px;
+            /* text-align: center; */
+        }
+
+        .box-1 img {
+            width: 100%;
+            height: 180px;
+            border-radius: 20px;
+
+        }
+
+        .box-2 {
+            width: 350px;
+            border: 1px solid #000000;
+            height: 280px;
+            border-radius: 20px;
+            /* display:grid;
+            justify-content: center; */
+            /* text-align: center; */
+        }
+
+        .box-2 img {
+            width: 100%;
+            height: 180px;
+            border-radius: 20px;
+
+        }
+
+        .box-3 {
+            width: 350px;
+            border: 1px solid #000000;
+            height: 280px;
+            border-radius: 20px;
+            display: grid;
+            justify-content: end;
+            /* text-align: center; */
+        }
+
+        .box-3 img {
+            width: 100%;
+            height: 180px;
+            border-radius: 20px;
+
+        }
+
+        .sub-box-1 h1 {
+            padding: 0 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 32px;
+        }
+
+        .sub-box-1 p {
+            padding: 0 30px;
+            margin-top: 0px;
+            font-size: 18px;
+            color: grey;
+        }
+
+        .sub-box-2 h1 {
+            padding: 0 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 32px;
+        }
+
+        .sub-box-2 p {
+            padding: 0 30px;
+            margin-top: 0px;
+            font-size: 18px;
+            color: grey;
+        }
+
+        .sub-box-3 h1 {
+            padding: 0 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 32px;
+          
+        }
+
+        .sub-box-3 p {
+            padding: 0 30px;
+            margin-top: 0px;
+            font-size: 18px;
+            color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="sub-box-1">
+            <div class="box-1">
+                <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,* "
+                    alt="">
+                <h1>Order Online</h1>
+                <p>Stay home and order to your doorstep</p>
+            </div>
+        </div>
+        <div class="sub-box-2">
+            <div class="box-2">
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="SubImage 01" />
+                <h1>On-site Dining</h1>
+                <p>View the city's favourite dining venues.</p>
+            </div>
+        </div>
+        <div class="sub-box-3">
+            <div class="box-3">
+                <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="SubImage 01" />
+                <h1>Nightlife & Clubs</h1>
+                <p>Explore the city's top nightlife outlets & Book tables.</p>
+            </div>
+        </div>
+    </div>
+   <footer>
+    <div class="container">
+        <div class="sub-class-1">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.w2m_lwRnG7fF14AyAXyxuwHaHa&pid=Api&P=0&h=180" alt="">
+        </div>
+        <div class="sub-class-2">
+            <h1>Navigation Link</h1>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+            <p>Login</p>
+        </div>
+        <div class="sub-class-3">
+            <h1>Learn More</h1>
+            <p>Privacy</p>
+            <p>Security</p>
+            <p>Terms</p>
+            <p>Sitemap</p>
+        </div>
+        <div class="sub-class-4">
+           <div class="copy"> &copyCopyright All Rights Reserved</div>
+        </div>
+    </div>
+   </footer>
+</body>
+</html>
